@@ -15,8 +15,6 @@ import {
 } from "react-icons/fa";
 import { ReactElement, useState } from "react";
 import { motion } from "framer-motion";
-import { IconType } from "react-icons";
-import { div } from "framer-motion/client";
 
 interface ProjectsInterface {
   title: string;
