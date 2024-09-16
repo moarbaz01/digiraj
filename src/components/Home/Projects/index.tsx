@@ -1,15 +1,33 @@
 "use client";
 import { khand } from "@/app/fonts/font";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import stylevowSearch from "../../../public/stylevow_search.png";
 import likeflames from "../../../public/likeflames.png";
 import portfolioGsap from "../../../public/portfolioGsap.png";
 import wazirX from "../../../public/wazirX.png";
 import { BiLink } from "react-icons/bi";
-import { useState } from "react";
+import {
+  FaFacebook,
+  FaGoogle,
+  FaMailBulk,
+  FaInstagram,
+  FaChartLine,
+} from "react-icons/fa";
+import { ReactElement, useState } from "react";
 import { motion } from "framer-motion";
+import { IconType } from "react-icons";
+import { div } from "framer-motion/client";
 
-const data = [
+interface ProjectsInterface {
+  title: string;
+  tags: string[];
+  image?: StaticImageData;
+  description?: string;
+  icon?: ReactElement;
+}
+
+// Data for Web Design Projects
+const webDesignProjects: ProjectsInterface[] = [
   {
     title: "StyleVow Ecommerce Platform",
     tags: ["UI/UX", "React"],
@@ -32,9 +50,54 @@ const data = [
   },
 ];
 
-const tabsData = ["Web Design", "Social Media Management"];
+// Data for Digital Marketing Projects
+const digitalMarketingProjects: ProjectsInterface[] = [
+  {
+    title: "Google Ads Campaign for E-commerce",
+    tags: ["PPC", "Google Ads", "E-commerce"],
+    description:
+      "Ran a successful Google Ads campaign for an e-commerce platform, achieving a 30% increase in ROI within 3 months.",
+    icon: <FaGoogle />,
+  },
+  {
+    title: "Facebook Ads for Fashion Brand",
+    tags: ["Facebook Ads", "Social Media", "Fashion"],
+    description:
+      "Managed Facebook Ads for a fashion brand, resulting in a 20% increase in website traffic and a 15% boost in sales.",
+    icon: <FaFacebook />,
+  },
+  {
+    title: "Email Marketing for SaaS Product",
+    tags: ["Email Campaign", "Lead Generation", "SaaS"],
+    description:
+      "Designed and executed an email marketing campaign for a SaaS product, leading to a 25% conversion rate increase.",
+    icon: <FaMailBulk />,
+  },
+  {
+    title: "Instagram Growth Strategy for Fitness Influencer",
+    tags: ["Social Media", "Instagram", "Influencer Marketing"],
+    description:
+      "Developed an Instagram growth strategy for a fitness influencer, increasing their followers by 50% in 6 months.",
+    icon: <FaInstagram />,
+  },
+  {
+    title: "SEO Optimization for Local Business",
+    tags: ["SEO", "Local Business", "Optimization"],
+    description:
+      "Improved SEO for a local business, driving a 40% increase in organic traffic and higher search engine rankings.",
+    icon: <FaChartLine />,
+  },
+];
+
+const tabsData = ["Web Design", "Digital Marketing"];
+
 export default function Projects() {
   const [selectedTab, setSelectedTab] = useState(0);
+
+  const getData = () => {
+    return selectedTab === 0 ? webDesignProjects : digitalMarketingProjects;
+  };
+
   return (
     <div
       id="projects"
@@ -45,7 +108,7 @@ export default function Projects() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className={`text-primary-dark font-bold ${khand.className} flex items-center gap-1  text-2xl md:text-4xl`}
+          className={`text-primary-dark font-bold ${khand.className} flex items-center gap-1 text-2xl md:text-4xl`}
         >
           Explore Our Work
         </motion.h1>
@@ -62,7 +125,7 @@ export default function Projects() {
         </motion.p>
 
         {/* Tabs */}
-        <div className="flex w-full items-center pt-12 flex-wrap md:justify-center gap-1 ">
+        <div className="flex w-full items-center pt-12 flex-wrap justify-center gap-1 ">
           {tabsData.map((tab, index) => (
             <div
               onClick={() => setSelectedTab(index)}
@@ -77,21 +140,26 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
         {/* Projects */}
         <div className="grid lg:grid-cols-3 gap-4 py-6 md:grid-cols-2">
-          {data.map((item, index) => (
+          {getData().map((item, index) => (
             <div
               key={index}
-              className="flex group flex-col cursor-pointer shadow-md shadow-primary md:hover:scale-105 transition border border-gray-100 p-4 rounded-md"
+              className="flex group flex-col cursor-pointer shadow-md shadow-primary md:hover:scale-105 transition border border-gray-100 p-6 rounded-md"
             >
-              <div className="flex-[1] w-full border border-purple-400">
-                <Image
-                  alt="StyleVow"
-                  height={300}
-                  width={300}
-                  src={item.image}
-                  className="object-cover h-full aspect-video w-full"
-                />
+              <div className="flex-[1] w-full flex items-center aspect-video justify-center border border-gray-500 p-4">
+                {item.image ? (
+                  <Image
+                    alt={item.title}
+                    height={300}
+                    width={300}
+                    src={item.image}
+                    className="object-cover h-full aspect-video w-full"
+                  />
+                ) : (
+                  <div className="text-7xl text-primary-dark">{item.icon}</div>
+                )}
               </div>
               <div className="flex items-center flex-wrap gap-2 my-4">
                 {item.tags.map((t, index) => (
@@ -105,13 +173,18 @@ export default function Projects() {
               </div>
               <div className="flex items-center justify-between gap-2">
                 <h1 className="text-xl font-bold">{item.title}</h1>
-                <div className="relative group/link cursor-pointer">
-                  <BiLink className="bg-black group-hover:md:block group-hover:scale-110 transition md:hidden text-white h-6 text-sm rounded-full w-6 p-1" />
-                  <div className=" text-xs bg-gray-300 p-1 md:group-hover/link:block hidden rounded-full absolute -top-2 -right-5">
-                    Link
+                {selectedTab === 0 && (
+                  <div className="relative group/link cursor-pointer">
+                    <BiLink className="bg-black group-hover:md:block group-hover:scale-110 transition md:hidden text-white h-6 text-sm rounded-full w-6 p-1" />
+                    <div className=" text-xs bg-gray-300 p-1 md:group-hover/link:block hidden rounded-full absolute -top-2 -right-5">
+                      Link
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
+              {item.description && (
+                <p className="text-sm text-gray-600 mt-2">{item.description}</p>
+              )}
             </div>
           ))}
         </div>
