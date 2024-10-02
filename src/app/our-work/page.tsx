@@ -2,7 +2,7 @@ import Footer from "@/components/Home/Footer";
 import Projects from "@/components/Home/Projects";
 import { Metadata } from "next";
 
-const BaseUrl = process.env.BASE_URL;
+const BaseUrl = process.env.CLIENT_BASE_URL;
 export const metadata: Metadata = {
   title: "Our Work | digir",
   description:
