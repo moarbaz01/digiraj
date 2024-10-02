@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "portfolio, our work, digir, digital marketing, web design, app development",
   robots: "index, follow",
   openGraph: {
-    title: "Our Work | digir",
+    title: "Our Work : explore our previous client works",
     description:
       "Explore our successful projects and digital marketing solutions.",
     url: `${BaseUrl}/our-work`,
