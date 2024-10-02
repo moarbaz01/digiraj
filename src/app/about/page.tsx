@@ -2,7 +2,7 @@ import AboutUs from "@/components/About/Main";
 import Footer from "@/components/Home/Footer";
 import { Metadata } from "next";
 
-const BaseUrl = process.env.BASE_URL;
+const BaseUrl = process.env.CLIENT_BASE_URL;
 export const metadata: Metadata = {
   title: "About Us | digir",
   description:
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: "about, digir, digital marketing, web design, app development",
   robots: "index, follow",
   openGraph: {
-    title: "About Us | digir",
+    title: "About : Elevating Your Digital Marketing Game",
     description: "Learn more about digir and our digital marketing expertise.",
     url: `${BaseUrl}/about`,
     siteName: "digir",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@DigiR_Raj", // Replace with your Twitter handle
-    title: "About Us | digir",
+    title: "About digir: Elevating Your Digital Marketing Game",
     description: "Learn more about digir and our services.",
     images: `${BaseUrl}/choice.jpg`, // Replace with your actual about image URL
   },

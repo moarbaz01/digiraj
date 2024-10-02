@@ -10,14 +10,14 @@ import { Toaster } from "react-hot-toast";
 
 const BASE_URL = process.env.CLIENT_BASE_URL;
 export const metadata: Metadata = {
-  title: "digir: Elevating Your Digital Presence",
+  title: "digir | Elevating Your Digital Presence",
   description:
     "Welcome to digir, your partner in digital marketing. We offer web design, app development, social media management, and more.",
   keywords:
     "digital marketing, web design, app development, social media management",
   robots: "index, follow",
   openGraph: {
-    title: "Home | digir",
+    title: "digir: Elevating Your Digital Presence",
     description:
       "Welcome to digir, your partner in digital marketing. We offer web design, app development, social media management, and more.",
     url: `${BASE_URL}/`, // Your base URL

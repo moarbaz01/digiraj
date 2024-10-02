@@ -4,7 +4,7 @@ import {
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
-import {  useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import logo from "../../../../public/logo.png";
 import { IoMenuOutline } from "react-icons/io5";
@@ -21,7 +21,7 @@ const data = [
   { label: "Why Us", path: "/#whyChooseUs" },
   { label: "About us", path: "/about" },
   { label: "Testimonials", path: "/#testimonials" },
-  { label: "Our Work", path: "/projects" },
+  { label: "Our Work", path: "/our-work" },
 ];
 
 export default function Navbar() {

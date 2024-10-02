@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "digir",
     images: [
       {
-        url: `${BaseUrl}/workSeo.jpg`, // Replace with your actual our work image URL
+        url: `${BaseUrl}/workSeo.png`, // Replace with your actual our work image URL
         width: 800,
         height: 600,
         alt: "Our Work at digir",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     site: "@DigiR_Raj", // Replace with your Twitter handle
     title: "Our Work | digir",
     description: "Explore our successful projects and solutions.",
-    images: `${BaseUrl}/workSeo.jpg`, // Replace with your actual our work image URL
+    images: `${BaseUrl}/workSeo.png`, // Replace with your actual our work image URL
   },
 };
 
