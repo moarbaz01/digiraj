@@ -78,8 +78,11 @@ export default function Contact() {
   ) => {
     e.preventDefault();
     const { name, email, phone, projectType, message } = emailData;
-    if (!name || !email || !projectType || !message) {
-      return toast("All fields are required");
+    if (!name) {
+      return toast("Full Name field is required");
+    }
+    if (!email) {
+      return toast("Email field is required");
     }
     setLoading(true);
     const response = await fetch("/api/mail", {
@@ -156,7 +159,7 @@ export default function Contact() {
                 onChange={handleChange}
                 value={emailData.name}
                 className="outline-none bg-transparent w-full"
-                placeholder="Full Name"
+                placeholder="Full Name ( Required )"
               />
             </label>
             <label
@@ -171,7 +174,7 @@ export default function Contact() {
                 onChange={handleChange}
                 value={emailData.email}
                 className="outline-none bg-transparent w-full"
-                placeholder="Business Email"
+                placeholder="Business Email ( Required )"
               />
             </label>
             <label

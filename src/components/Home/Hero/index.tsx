@@ -78,15 +78,13 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <motion.button
+            <button
               onClick={() => router.push("#contact")}
-              className="gap-2 w-full group flex items-center justify-center hover:opacity-80 transition bg-black py-4 px-4 text-white rounded-full"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
+              className="gap-2 w-full group flex items-center hover:scale-105 justify-center transition bg-black py-4 px-4 text-white rounded-full"
             >
               <span>Contact Us</span>{" "}
               <BiPhone className="group-hover:animate-bounce" />
-            </motion.button>
+            </button>
             <div className="flex items-center -space-x-4 pl-6">
               {manData.map((url, index) => (
                 <div
@@ -115,7 +113,8 @@ export default function Hero() {
           viewport={{ once: true }}
           className="relative rounded-md py-4 md:px-6 px-4 flex-[1] w-full"
         >
-          <div className="w-full h-3/4 bg-gradient-to-t from-white to-transparent absolute -bottom-2 left-0 z-10"></div>
+          {/* White Overlay */}
+          {/* <div className="w-full h-3/4 bg-gradient-to-t from-white to-transparent absolute -bottom-2 left-0 z-10"></div> */}
           <Image
             src={heroImage}
             alt="Stylevow Website"

@@ -1,11 +1,10 @@
 "use client";
-import { khand } from "@/app/fonts/font";
 import {
   MdOutlineArrowOutward,
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
-import { useRouter } from "next/navigation";
+import {  useRouter } from "next/navigation";
 import Image from "next/image";
 import logo from "../../../public/logo.png";
 import { IoMenuOutline } from "react-icons/io5";
@@ -28,7 +27,6 @@ const data = [
 export default function Navbar() {
   const router = useRouter();
   const [openSidebar, setOpenSidebar] = useState(false);
-
   const handleClickOnDrawerLink = (path: string) => {
     setOpenSidebar(false);
     router.push(path);
@@ -37,16 +35,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full md:py-8 py-4 md:px-6 px-4 backdrop-blur-md md:backdrop-blur-none md:bg-white z-[999] border-b-[1px]">
       <div className="flex items-center max-w-screen-xl mx-auto justify-between">
-        <div
-          onClick={() => router.push("/")}
-          className="flex items-center gap-2 cursor-pointer"
-        >
-          <Image src={logo} alt="DigiR" height={40} width={40} />
-          <h1
-            className={`text-2xl ${khand.className} md:hidden lg:block group/logo font-[600] text-black tracking-wide`}
-          >
-            DIGI<span className="rotate-180 text-sm">R</span>
-          </h1>
+        <div onClick={() => router.push("/")} className="h-10 cursor-pointer">
+          <Image
+            src={logo}
+            alt="DigiR"
+            height={300}
+            width={200}
+            className="h-full w-full"
+          />
         </div>
         <ul className="md:flex items-center gap-6 hidden">
           {data.map((item, index) => (

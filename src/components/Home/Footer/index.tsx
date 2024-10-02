@@ -1,27 +1,31 @@
-import { khand } from "@/app/fonts/font";
+"use client";
 import Image from "next/image";
 import { CgCopyright } from "react-icons/cg";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
 import logo from "../../../public/logo.png";
-// import footerWave from "../../../public/footer-wave.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+  const router = useRouter();
   return (
     <>
       <div className="px-4 py-8 bg-primary-bg">
-        <div className="max-w-screen-xl mx-auto flex items-center flex-wrap gap-12 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-8 ">
+        <div className="max-w-screen-xl mx-auto flex flex-wrap gap-12 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-8 ">
           {/* First */}
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2">
-              {" "}
-              <Image src={logo} alt="DigiR" height={40} width={40} />
-              <h1
-                className={`text-3xl ${khand.className} group/logo hover:rotate-180 font-bold cursor-pointer tracking-wide `}
-              >
-                DIGI<span className="text-sm">R</span>
-              </h1>
+            <div
+              onClick={() => router.push("/")}
+              className="h-12 md:h-20 w-full flex cursor-pointer"
+            >
+              <Image
+                src={logo}
+                alt="DigiR"
+                height={300}
+                width={200}
+                className="h-full w-1/3 md:1/2 object-contain"
+              />
             </div>
             <p className="text-sm">
               Expert Digital Marketing and Web Design Services to Amplify Your
@@ -37,7 +41,7 @@ export default function Footer() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/projects">Projects</Link>
+                <Link href="/our-work">Our Work</Link>
               </li>
               <li>
                 <Link href="/about">About Us</Link>
