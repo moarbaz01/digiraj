@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { BiSend } from "react-icons/bi";
 
 export default function QuestionModal({
@@ -12,6 +13,14 @@ export default function QuestionModal({
 }) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setEmail("");
+    setMessage("");
+    onClose();
+    toast("Question sent successfully");
+  };
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -30,7 +39,10 @@ export default function QuestionModal({
         onClick={(e) => e.stopPropagation()}
         className="md:h-1/2 md:w-1/3 w-[90%] h-1/2 p-4 bg-white rounded-md drop-shadow-lg"
       >
-        <form className="flex flex-col gap-4 justify-center h-full w-full ">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-4 justify-center h-full w-full "
+        >
           <h1 className="text-3xl text-primary-dark font-bold">
             Ask Question ?
           </h1>

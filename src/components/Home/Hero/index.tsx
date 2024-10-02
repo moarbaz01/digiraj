@@ -2,12 +2,12 @@
 import { khand } from "@/app/fonts/font";
 import Image from "next/image";
 import { BiPhone } from "react-icons/bi";
-import man1 from "../../../public/man/1.jpg";
-import man2 from "../../../public/man/2.jpg";
-import man3 from "../../../public/man/3.jpg";
+import man1 from "../../../../public/man/1.jpg";
+import man2 from "../../../../public/man/2.jpg";
+import man3 from "../../../../public/man/3.jpg";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import heroImage from "../../../public/hero.svg";
+import heroImage from "../../../../public/hero.svg";
 import { BsArrowUp } from "react-icons/bs";
 import { motion } from "framer-motion";
 

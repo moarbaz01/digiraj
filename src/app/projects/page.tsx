@@ -2,6 +2,7 @@ import Footer from "@/components/Home/Footer";
 import Projects from "@/components/Home/Projects";
 import { Metadata } from "next";
 
+const BaseUrl = process.env.BASE_URL;
 export const metadata: Metadata = {
   title: "Our Work | digir",
   description:
@@ -13,11 +14,11 @@ export const metadata: Metadata = {
     title: "Our Work | digir",
     description:
       "Explore our successful projects and digital marketing solutions.",
-    url: "https://digirinnovations.com/our-work",
+    url: `${BaseUrl}/our-work`,
     siteName: "digir",
     images: [
       {
-        url: "../../public/workSeo.jpg", // Replace with your actual our work image URL
+        url: `${BaseUrl}/workSeo.jpg`, // Replace with your actual our work image URL
         width: 800,
         height: 600,
         alt: "Our Work at digir",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     site: "@DigiR_Raj", // Replace with your Twitter handle
     title: "Our Work | digir",
     description: "Explore our successful projects and solutions.",
-    images: "../../public/workSeo.jpg", // Replace with your actual our work image URL
+    images: `${BaseUrl}/workSeo.jpg`, // Replace with your actual our work image URL
   },
 };
 

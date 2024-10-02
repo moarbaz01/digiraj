@@ -2,6 +2,7 @@ import AboutUs from "@/components/About/Main";
 import Footer from "@/components/Home/Footer";
 import { Metadata } from "next";
 
+const BaseUrl = process.env.BASE_URL;
 export const metadata: Metadata = {
   title: "About Us | digir",
   description:
@@ -11,11 +12,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us | digir",
     description: "Learn more about digir and our digital marketing expertise.",
-    url: "https://digirinnovations.com/about",
+    url: `${BaseUrl}/about`,
     siteName: "digir",
     images: [
       {
-        url: "../../public/choice.jpg", // Replace with your actual about image URL
+        url: `${BaseUrl}/choice.jpg`, // Replace with your actual about image URL
         width: 800,
         height: 600,
         alt: "About digir",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     site: "@DigiR_Raj", // Replace with your Twitter handle
     title: "About Us | digir",
     description: "Learn more about digir and our services.",
-    images: "../../public/choice.jpg", // Replace with your actual about image URL
+    images: `${BaseUrl}/choice.jpg`, // Replace with your actual about image URL
   },
 };
 export default function Page() {

@@ -1,10 +1,10 @@
 "use client";
 import { khand } from "@/app/fonts/font";
 import Image, { StaticImageData } from "next/image";
-import stylevowSearch from "../../../public/stylevow_search.png";
-import likeflames from "../../../public/likeflames.png";
-import portfolioGsap from "../../../public/portfolioGsap.png";
-import wazirX from "../../../public/wazirX.png";
+import stylevowSearch from "../../../../public/stylevow_search.png";
+import likeflames from "../../../../public/likeflames.png";
+import portfolioGsap from "../../../../public/portfolioGsap.png";
+import wazirX from "../../../../public/wazirX.png";
 import { BiLink } from "react-icons/bi";
 import {
   FaFacebook,

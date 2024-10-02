@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CgCopyright } from "react-icons/cg";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
-import logo from "../../../public/logo.png";
+import logo from "../../../../public/logo.png";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 

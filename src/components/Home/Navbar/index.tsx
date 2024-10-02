@@ -6,7 +6,7 @@ import {
 import { FaInstagram } from "react-icons/fa";
 import {  useRouter } from "next/navigation";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import logo from "../../../../public/logo.png";
 import { IoMenuOutline } from "react-icons/io5";
 import { Drawer } from "@mui/material";
 import { useState } from "react";

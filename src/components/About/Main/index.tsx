@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import computer from "../../../public/computer.jpg";
-import choice from "../../../public/choice.jpg";
+import computer from "../../../../public/computer.jpg";
+import choice from "../../../../public/choice.jpg";
 import { khand } from "@/app/fonts/font";
 import { motion } from "framer-motion";
 
