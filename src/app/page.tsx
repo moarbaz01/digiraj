@@ -8,8 +8,9 @@ import WhyChooseUs from "@/components/Home/WhyChooseUs";
 import { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 
+const BASE_URL = process.env.CLIENT_BASE_URL;
 export const metadata: Metadata = {
-  title: "Home | digir",
+  title: "digir: Elevating Your Digital Presence",
   description:
     "Welcome to digir, your partner in digital marketing. We offer web design, app development, social media management, and more.",
   keywords:
@@ -19,11 +20,11 @@ export const metadata: Metadata = {
     title: "Home | digir",
     description:
       "Welcome to digir, your partner in digital marketing. We offer web design, app development, social media management, and more.",
-    url: "https://digirinnovations.com/", // Your base URL
+    url: `${BASE_URL}/`, // Your base URL
     siteName: "digir",
     images: [
       {
-        url: "../public/HomePageSeo.png", // Replace with your actual home image URL
+        url: `${BASE_URL}/HomePageSeo.png`, // Full URL to your image
         width: 800,
         height: 600,
         alt: "Welcome to digir",
@@ -35,11 +36,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@DigiR_Raj", // Replace with your Twitter handle
-    title: "Home | digir",
+    title: "digir: Elevating Your Digital Presence",
     description: "Welcome to digir, your partner in digital marketing.",
-    images: "../public/HomePageSeo.png", // Replace with your actual home image URL
+    images: `${BASE_URL}/HomePageSeo.png`, // Full URL to your image
   },
 };
+
 export default function Home() {
   return (
     <div>
