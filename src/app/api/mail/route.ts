@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     // Get Data
     const { email, name, phone, message, projectType } = await req.json();
     // Validation
-    if (!email || !name || !message || !projectType) {
+    if (!email || !name || !projectType) {
       return NextResponse.json(
         { message: "All fields are required" },
         { status: 400 }
