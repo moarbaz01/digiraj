@@ -1,6 +1,5 @@
 import Contact from "@/components/Home/Contact";
 import Faqs from "@/components/Home/Faqs";
-import Footer from "@/components/Home/Footer";
 import Hero from "@/components/Home/Hero";
 import Services from "@/components/Home/Services";
 import Testimonials from "@/components/Home/Testimonials";
@@ -52,7 +51,6 @@ export default function Home() {
       <Testimonials />
       <Contact />
       <Faqs />
-      <Footer />
     </div>
   );
 }

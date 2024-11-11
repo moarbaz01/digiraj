@@ -1,5 +1,4 @@
 import AboutUs from "@/components/About/Main";
-import Footer from "@/components/Home/Footer";
 import { Metadata } from "next";
 
 const BaseUrl = process.env.CLIENT_BASE_URL;
@@ -35,9 +34,6 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <div>
       <AboutUs />
-      <Footer />
-    </div>
   );
 }

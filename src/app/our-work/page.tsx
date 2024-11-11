@@ -1,4 +1,3 @@
-import Footer from "@/components/Home/Footer";
 import Projects from "@/components/Home/Projects";
 import { Metadata } from "next";
 
@@ -38,9 +37,6 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div>
       <Projects />
-      <Footer />
-    </div>
   );
 }

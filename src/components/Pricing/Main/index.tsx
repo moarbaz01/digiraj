@@ -58,7 +58,7 @@ const plans = [
 export default function Pricing() {
   const router = useRouter();
   return (
-    <div className="px-6 py-12">
+    <div className="px-6 py-6">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex flex-col md:items-center gap-2">
           <motion.h1

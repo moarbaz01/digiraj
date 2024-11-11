@@ -1,4 +1,3 @@
-import Footer from "@/components/Home/Footer";
 import Pricing from "@/components/Pricing/Main";
 import { Metadata } from "next";
 
@@ -30,10 +29,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return (
-    <div>
-      <Pricing />
-      <Footer />
-    </div>
-  );
+  return <Pricing />;
 }

@@ -114,7 +114,7 @@ export default function Projects() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-lg text-gray-500 text-center md:w-2/4 mt-4"
+          className="text-lg text-gray-500 text-center md:w-3/4 mt-4"
         >
           At <b>DigiR</b>, we specialize in providing cutting-edge website
           design, development, and digital marketing services to businesses of

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import LoadingScreen from "../LoadingScreen";
+import LoadingScreen from "@/components/ui/LoadingScreen";
 
 export default function InitialLoader({
   children,
