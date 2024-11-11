@@ -11,7 +11,7 @@ const textAnimation = {
 
 export default function Download() {
   return (
-    <div className="px-6 md:py-12 py-6">
+    <div className="px-6 md:py-12 py-6 md:h-screen md:flex items-center justify-center">
       <div className="max-w-screen-xl mx-auto">
         {/* Section Heading */}
         <section className="text-center mb-12">
