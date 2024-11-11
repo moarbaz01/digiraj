@@ -16,7 +16,7 @@ export const sendEmail = async (
 ) => {
   const mailOptions = {
     from,
-    to: "arbazmr123@gmail.com",
+    to: process.env.BUSINESS_EMAIL,
     subject,
     html,
   };
