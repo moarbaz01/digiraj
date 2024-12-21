@@ -29,9 +29,9 @@ export default function TermsAndConditions() {
         transition={{ duration: 0.3 }}
         className="text-gray-600 leading-relaxed mb-8"
       >
-        Welcome to LawNXt! By accessing our application, you agree to comply
+        Welcome to LawNXT! By accessing our application, you agree to comply
         with and be bound by these terms and conditions. Please read them
-        carefully as they govern your use of LawNXt.
+        carefully as they govern your use of LawNXT.
       </motion.p>
 
       <section className="space-y-8">
@@ -46,7 +46,7 @@ export default function TermsAndConditions() {
             1. Acceptance of Terms
           </h2>
           <p className="text-gray-600">
-            By accessing or using LawNXt, you acknowledge that you have read,
+            By accessing or using LawNXT, you acknowledge that you have read,
             understood, and agree to be bound by these terms and all applicable
             laws and regulations. If you disagree with any part of these terms,
             please refrain from using the application.
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
             2. Use of the Application
           </h2>
           <p className="text-gray-600">
-            LawNXt provides a case management system designed to assist legal
+            LawNXT provides a case management system designed to assist legal
             professionals in managing client information, case details, and
             related tasks. Your access is limited to personal and professional
             use only, and you agree not to misuse or attempt to gain
@@ -77,20 +77,20 @@ export default function TermsAndConditions() {
           </p>
           <ul className="list-disc list-inside text-gray-600 mt-4">
             <li>
-              <strong>No Unlawful Use:</strong> You may not use LawNXt for any
+              <strong>No Unlawful Use:</strong> You may not use LawNXT for any
               illegal or unauthorized purpose, including but not limited to
               activities that infringe on intellectual property rights, violate
               privacy rights, or are fraudulent or deceptive in nature.
             </li>
             <li>
               <strong>No Data Mining or Extraction:</strong> Automated
-              collection, scraping, or data mining within LawNXt is strictly
+              collection, scraping, or data mining within LawNXT is strictly
               prohibited.
             </li>
             <li>
               <strong>Compliance with Laws:</strong> You are responsible for
               complying with all applicable local, national, and international
-              laws in your use of LawNXt.
+              laws in your use of LawNXT.
             </li>
           </ul>
         </motion.div>
@@ -106,7 +106,7 @@ export default function TermsAndConditions() {
             3. Account Security and Responsibility
           </h2>
           <p className="text-gray-600">
-            To access certain features, you must create an account with LawNXt.
+            To access certain features, you must create an account with LawNXT.
             You are responsible for maintaining the security of your login
             credentials and for all activities conducted under your account.
           </p>
@@ -135,7 +135,7 @@ export default function TermsAndConditions() {
             4. Privacy and Data Protection
           </h2>
           <p className="text-gray-600">
-            LawNXt is committed to protecting your privacy. Our Privacy Policy,
+            LawNXT is committed to protecting your privacy. Our Privacy Policy,
             available on our website, outlines how we collect, store, and use
             your information. By using our services, you consent to our data
             practices as described in the Privacy Policy.
@@ -153,14 +153,14 @@ export default function TermsAndConditions() {
             5. Intellectual Property Rights
           </h2>
           <p className="text-gray-600">
-            All content on LawNXt, including but not limited to software, text,
+            All content on LawNXT, including but not limited to software, text,
             images, graphics, and other material, is protected by intellectual
-            property rights and owned or licensed by LawNXt. Unauthorized
+            property rights and owned or licensed by LawNXT. Unauthorized
             copying, distribution, or modification of this content is strictly
             prohibited.
           </p>
           <p className="text-gray-600 mt-4">
-            Any feedback or suggestions you provide may be used by LawNXt
+            Any feedback or suggestions you provide may be used by LawNXT
             without any obligation to you, and you grant us a perpetual,
             royalty-free, and unrestricted license to use such feedback.
           </p>
@@ -177,7 +177,7 @@ export default function TermsAndConditions() {
             6. Third-Party Services
           </h2>
           <p className="text-gray-600">
-            LawNXt may include links or integrations with third-party websites
+            LawNXT may include links or integrations with third-party websites
             and services. We are not responsible for the availability, accuracy,
             or reliability of these external sites or services. You use such
             third-party services at your own risk, and their terms and policies
@@ -196,8 +196,8 @@ export default function TermsAndConditions() {
             7. Limitation of Liability
           </h2>
           <p className="text-gray-600">
-            LawNXt is provided “as is” without any warranties. To the maximum
-            extent permitted by law, LawNXt and its affiliates disclaim all
+            LawNXT is provided “as is” without any warranties. To the maximum
+            extent permitted by law, LawNXT and its affiliates disclaim all
             warranties, express or implied, and will not be liable for any
             damages, including but not limited to lost data, revenue, or other
             intangible losses arising from your use of the application.
@@ -215,10 +215,10 @@ export default function TermsAndConditions() {
             8. Termination of Service
           </h2>
           <p className="text-gray-600">
-            LawNXt reserves the right to suspend or terminate your access to the
+            LawNXT reserves the right to suspend or terminate your access to the
             application at any time, with or without cause, and without prior
             notice. Upon termination, your right to use the application will
-            cease, and you must discontinue any further use of LawNXt.
+            cease, and you must discontinue any further use of LawNXT.
           </p>
         </motion.div>
 
@@ -234,7 +234,7 @@ export default function TermsAndConditions() {
           </h2>
           <p className="text-gray-600">
             These terms shall be governed by and construed in accordance with
-            the laws of the jurisdiction in which LawNXt operates. You agree to
+            the laws of the jurisdiction in which LawNXT operates. You agree to
             submit to the exclusive jurisdiction of the courts located in that
             jurisdiction to resolve any disputes or claims arising from your use
             of the application.
