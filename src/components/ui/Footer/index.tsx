@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="max-w-screen-xl w-full flex items-center justify-between">
           <div className="flex text-sm items-center text-black gap-2">
             <CgCopyright />
-            <p>2024 DigiRaj, All rights reserved</p>
+            <p>2024 DigiR, All rights reserved</p>
           </div>{" "}
           <div className="flex items-center gap-4">
             <FaInstagram className=" text-2xl bg-primary-dark rounded-full p-1  text-white cursor-pointer hover:opacity-80 transition" />
